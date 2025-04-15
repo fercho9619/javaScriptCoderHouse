@@ -43,14 +43,32 @@ function funcionFor(){
         }
     }else{
         console.log("rango invalido"); 
-    }
-    
-    
+    }   
 }
 
+function alumnos() {
+
+    let cantidad = Number(prompt("Ingrese la cantidad de alumnos que tendrá en su clase"))
+    let alumno = {
+        nombre: [],
+        edad: [],
+        correo: [],
+    };
+    for (let i = 0; i < cantidad; i++) {
+        alumno.nombre[i] = prompt("ingresa el nombre del alumno "+(i+1));
+        alumno.edad[i] = prompt("ingresa la edad del alumno "+(i+1));
+        alumno.correo[i] = prompt("ingresa el correo del alumno "+(i+1));
+    }
+    for (let i = 0; i < cantidad; i++) {
+        console.log("Datos del alumno " + (i+1));
+        console.log(alumno.nombre[i]);
+        console.log(alumno.edad[i]);
+        console.log(alumno.correo[i]);
+    }
+}
 
 function mostrarPrompt(){
-    let seleccionUsuario = Number(prompt("Ingresa el numero de lafuncion que quieres realizar"))
+    let seleccionUsuario = Number(prompt("Ingresa el numero de la funcion que quieres realizar"))
     console.log(seleccionUsuario);
     let resultado = 0;
 
@@ -81,6 +99,7 @@ function mostrarPrompt(){
 
         case 5:
             console.log("arrays");
+            alumnos();
             break;
     }
 }
