@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: red;
+}
+
+
+
+p{
+    font-size: 1.5rem;
+}
+
+main{
+    text-align: center;
+    
+}
+
+main ol{
+    text-align: left;
+}
